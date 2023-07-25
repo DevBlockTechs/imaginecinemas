@@ -1,7 +1,23 @@
+import { useEffect } from "react"
+
 const Header =()=> {
+
+    useEffect(()=>{
+        window.addEventListener('scroll', ()=>{
+            if(window.scrollY > 150){
+                document.getElementById('logo').style.opacity = 0
+            }
+            
+            if(window.scrollY < 150){
+                document.getElementById('logo').style.opacity = 1
+            }
+        })
+    })
+
+
   return (
     <header>
-        <div className="logo">
+        <div id="logo">
             IMAGINE CINEMAS
         </div>
         <div className="menu">
