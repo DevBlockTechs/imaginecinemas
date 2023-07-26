@@ -12,7 +12,8 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    padding: 35px 17px;
+    align-items: center;
+    padding: 0 5px 5px 17px;
     background-color: transparent;
     position: fixed;
     top: 0;
@@ -27,15 +28,18 @@ header{
 #logo{
     transition: .5s ease-in;
     font-family: Sangbleu-Kingdom,Georgia,sans-serif;
+    transform: translateY(-23px);
 
 }
 
 .menu{
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
     position: relative;
     cursor: pointer;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    border: 1px solid #ec6060;
+    transform: translate(50px, -22px);
 }
 .jsline{
     padding: 1px;
@@ -44,17 +48,25 @@ header{
 
 .top{
     width: 20px;
+    position: absolute;
+    top: 45%;
+    left: 29%;
 }
 
 .middle{
     width: 30px;
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    transform: translate(-40%, 40%);
 }
 
 .bottom{
     width: 20px;
     position: absolute;
-    bottom: 4px;
-    right: 0;
+    top: 55%;
+    right: 55%;
+    transform: translate(50%, 52%);
 }
 
 .dashboard{
